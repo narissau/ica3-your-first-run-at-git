@@ -27,21 +27,17 @@
         </ul>
     </div>
 
-    <h2>Other Menu Items</h2>
-    <ul>
-        <li>Freshly baked chocolate chip cookies</li>
-        <li>Cinnamon rolls</li>
-        <li>Banana Bread</li>
-        <li>Homemade Pita Bread</li>
-        <li>Custom Cakes!</li>
-    </ul>
-
     <h3>Want your own custom cake? Send us your order!</h3>
-    <form>
+    <form action="index.html">
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name"><br>
-        <label for="flavor">Cake Flavor?</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number"><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
 
+        <!-- radio for cake flavors -->
+        <label for="flavor">Cake Flavor?</label><br>
         <input type="radio" id="vanilla" name="flavor" value="vanilla">
         <label for="vanilla">Vanilla</label><br>
         <input type="radio" id="chocolate" name="flavor" value="chocolate">
@@ -51,7 +47,19 @@
         <input type="radio" id="ice-cream" name="flavor" value="ice-cream">
         <label for="ice-cream">Ice Cream</label><br>
         <input type="radio" id="carrot" name="flavor" value="carrot">
-        <label for="carrot">Carrot</label>
+        <label for="carrot">Carrot</label><br><br>
 
-    
+        <!-- colors on cake -->
+        <label for="color">Frosting Color(s)?</label>
+        <input type="color" id="color-1" name="color">
+        <input type="color" id="color-2" name="color">
+        <input type="color" id="color-3" name="color">
+        <br><br>
+        
+        <!-- cake size -->
+        <label for="size">How many people should this cake feed?</label>
+        <input type="number" id="size" name="size">
+        <br><br>
+        <input type="submit">
+        
     </form>
